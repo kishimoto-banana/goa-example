@@ -1,0 +1,30 @@
+swagger: "2.0"
+info:
+  title: exmaple api
+  description: Service for example
+  version: ""
+host: localhost:8000
+consumes:
+- application/json
+- application/xml
+- application/gob
+produces:
+- application/json
+- application/xml
+- application/gob
+paths:
+  /ping:
+    get:
+      tags:
+      - ping
+      summary: Return pong ping
+      operationId: ping#Return pong
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK response.
+          schema:
+            type: string
+      schemes:
+      - http

@@ -6,7 +6,7 @@ import (
 
 var _ = API("example-api", func() {
 	Title("exmaple api")
-	Descriptino("Service for example")
+	Description("Service for example")
 	Server("example-api", func() {
 		Host("localhost", func() {
 			URI("http://localhost:8000") 
