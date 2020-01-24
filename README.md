@@ -10,4 +10,4 @@ $ make run
 
 ## エンドポイント
 
-- http://localhost:8080/pin
+- http://localhost:8080/ping
