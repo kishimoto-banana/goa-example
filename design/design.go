@@ -1,6 +1,7 @@
 package design
 
 import (
+	- "github.com/kishimoto-banana/goa-example/design/resource"
 	. "goa.design/goa/v3/dsl"
 )
 
@@ -9,20 +10,7 @@ var _ = API("example-api", func() {
 	Description("Service for example")
 	Server("example-api", func() {
 		Host("localhost", func() {
-			URI("http://localhost:8000") 
-		})
-	})
-})
-
-var _ = Service("ping", func() {
-	Description("Ping/Pong service")
-	Method("Return pong", func() {
-		Result(String)
-		HTTP(func() {
-			GET("/ping")
-			Response(StatusOK, func() {
-				ContentType("text/html")
-			})
+			URI("http://localhost:8000")
 		})
 	})
 })
